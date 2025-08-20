@@ -1,0 +1,17 @@
+body{background:#f9fafb;color:#111;font-family:sans-serif;margin:0;padding:0}
+.container{max-width:900px;margin:0 auto;padding:20px}
+header,.panel,.log{background:#fff;border:1px solid #ddd;border-radius:8px;padding:16px;margin-top:12px}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.stat{flex:1;min-width:120px;background:#f3f4f6;border-radius:8px;padding:8px}
+.stat .label{font-size:12px;color:#555}
+.stat .value{font-size:20px;font-weight:bold}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
+.flipwrap{perspective:1000px}
+.flip{position:relative;height:150px;transform-style:preserve-3d;transition:transform .6s;cursor:pointer}
+.flip .back,.flip .front{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;border:1px solid #ddd;border-radius:8px;backface-visibility:hidden;font-weight:bold;padding:8px;text-align:center}
+.flip .back{background:#1f2937;color:#fff}
+.flip .front{background:#fff;transform:rotateY(180deg)}
+.flip.flipped{transform:rotateY(180deg)}
+.ending{position:fixed;inset:0;background:rgba(0,0,0,0.7);display:flex;align-items:center;justify-content:center}
+.ending.hidden{display:none}
+.ending-content{background:#fff;padding:20px;border-radius:8px;text-align:center;max-width:400px}
